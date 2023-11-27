@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Form Example</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        #container {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+        }
+
+        form {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column; /* 将内容排列成列 */
+        }
+
+        /* 根据需要，你可以为 input 和 textarea 添加样式 */
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif; /* 使用 Times New Roman 字体 */
+            font-weight: bold; /* 设置字体为粗体 */
+            color: pink; /* 设置字体颜色为粉色 */
+        }
+       label {
+            width: 20%;
+            margin-right: 2%; /* 添加一些间距 */
+            text-align: right; /* 将文本右对齐 */
+            font-family: 'Times New Roman', Times, serif; /* 使用 Times New Roman 字体 */
+            font-weight: bolder; /* 设置字体为粗体 */
+            color: pink; /* 设置字体颜色为粉色 */
+        }
+
+        /* 对 input2 和 input3 进行样式调整 */
+        #input2, #input3 {
+            width: 48%; /* 设置宽度 */
+            margin-left: 4%; /* 设置右侧间距 */
+        }
+        /* 将第一行的 input 排成一行 */
+        #input1, #input4 {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        /* 将 input 和 label 包裹在一个 div 中，使其在同一行显示 */
+        /* 将 input 和 label 包裹在一个 div 中，使其在同一行显示 */
+        .input-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        /* 将图片宽度调整为100%以适应容器 */
+        #picture {
+            width: 80%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <form>
+            <!-- Input Area 1 -->
+            <div class="input-row">
+                <label for="input1">Input 1:</label>
+                <input type="text" id="input1" name="input1">
+            </div>
+
+            <!-- Input Area 2 and Input Area 3 on the same row -->
+            <div class="input-row">
+                <label for="input2">Input 2:</label>
+                <input type="text" id="input2" name="input2">
+                <label for="input3">Input 3:</label>
+                <input type="text" id="input3" name="input3">
+            </div>
+
+            <!-- Input Area 4 -->
+            <div class="input-row">
+                <label for="input4">Input 4:</label>
+                <input type="text" id="input4" name="input4">
+            </div>
+
+            <!-- Text Area -->
+            <div class="input-row">
+                <label for="textarea">Text Area:</label>
+                <textarea id="textarea" name="textarea" rows="4" cols="50"></textarea>
+            </div>
+
+            <!-- Picture -->
+            <div class="input-row">
+                <label for="picture">Picture:</label>
+                <img src="jennie-Kim.jpg "alt="金珍妮帶我度過寫加分題的漫漫長夜" id="picture">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
